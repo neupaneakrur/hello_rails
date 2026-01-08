@@ -22,6 +22,9 @@ set :linked_dirs, %w[
 set :keep_releases, 5
 
 set :puma_service_unit_name, 'puma_hello_rails'
+set :puma_env, fetch(:rails_env)
+set :puma_conf, "#{shared_path}/config/puma.rb"
+
 
 
 
