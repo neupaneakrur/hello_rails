@@ -2,7 +2,7 @@
 lock "~> 3.20.0"
 
 set :application, "hello_rails"
-set :repo_url, "git@github.com:YOUR_ORG/hello_rails.git"
+set :repo_url, "git@github.com:neupaneakrur/hello_rails.git"
 
 set :deploy_to, "/var/www/hello_rails"
 
@@ -20,6 +20,9 @@ set :linked_dirs, %w[
 ]
 
 set :keep_releases, 5
+
+set :puma_service_unit_name, 'puma_hello_rails'
+
 
 
 

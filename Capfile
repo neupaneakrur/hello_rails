@@ -10,3 +10,6 @@ require "capistrano/sidekiq"
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
+require 'capistrano/puma'
+install_plugin Capistrano::Puma
+

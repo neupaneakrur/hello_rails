@@ -40,3 +40,21 @@ plugin :solid_queue if ENV["SOLID_QUEUE_IN_PUMA"]
 # Specify the PID file. Defaults to tmp/pids/server.pid in development.
 # In other environments, only set the PID file if requested.
 pidfile ENV["PIDFILE"] if ENV["PIDFILE"]
+
+
+directory "/var/www/hello_rails/current"
+environment "production"
+
+pidfile "/var/www/hello_rails/shared/tmp/pids/puma.pid"
+state_path "/var/www/hello_rails/shared/tmp/pids/puma.state"
+stdout_redirect "/var/www/hello_rails/shared/log/puma.stdout.log",
+                "/var/www/hello_rails/shared/log/puma.stderr.log", true
+
+threads 2, 5
+workers 2
+
+bind "tcp://0.0.0.0:3000"
+preload_app!
+
+plugin :tmp_restart
+

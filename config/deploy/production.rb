@@ -11,7 +11,7 @@ server "54.163.235.150",
        user: "ubuntu",
        roles: %w{app db web},
        ssh_options: {
-         keys: %w(~/.ssh/your-key.pem),
+         keys: %w(~/Downloads/ruby-test.pem),
          forward_agent: false,
          auth_methods: %w(publickey)
        }
