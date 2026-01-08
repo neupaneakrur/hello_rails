@@ -3,6 +3,8 @@ lock "~> 3.20.0"
 
 set :application, "hello_rails"
 set :repo_url, "git@github.com:neupaneakrur/hello_rails.git"
+set :branch, "main"
+
 
 set :deploy_to, "/var/www/hello_rails"
 
