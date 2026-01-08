@@ -27,6 +27,12 @@ set :puma_service_unit_name, 'puma_hello_rails'
 set :puma_env, fetch(:rails_env)
 set :puma_conf, "#{shared_path}/config/puma.rb"
 
+set :rbenv_type, :user
+set :rbenv_ruby, '3.2.2'
+
+set :rbenv_path, '/home/ubuntu/.rbenv'
+set :rbenv_map_bins, %w[rake gem bundle ruby rails puma]
+set :rbenv_roles, :all
 
 
 
