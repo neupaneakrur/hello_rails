@@ -15,6 +15,11 @@ set :linked_files, %w[
   config/master.key
 ]
 
+set :linked_files, %w[
+  config/master.key
+  config/credentials/production.key
+]
+
 set :linked_dirs, %w[
   log
   tmp/pids
