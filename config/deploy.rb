@@ -36,6 +36,12 @@ set :rbenv_root, '/home/ubuntu/.rbenv'
 
 set :rbenv_prefix, "#{fetch(:rbenv_path)} exec"
 
+set :default_env, {
+  'RBENV_ROOT' => '/home/ubuntu/.rbenv',
+  'PATH' => '/home/ubuntu/.rbenv/shims:/home/ubuntu/.rbenv/bin:/usr/local/bin:/usr/bin:/bin'
+}
+
+
 set :rbenv_map_bins, %w[rake gem bundle ruby rails puma]
 set :rbenv_roles, :all
 
