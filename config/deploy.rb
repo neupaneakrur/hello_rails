@@ -30,11 +30,19 @@ set :puma_conf, "#{shared_path}/config/puma.rb"
 set :rbenv_type, :user
 set :rbenv_ruby, '3.2.2'
 
-set :rbenv_path, '/home/ubuntu/.rbenv'
+set :rbenv_path, '/usr/bin/rbenv'
+set :rbenv_prefix, "/usr/bin/rbenv exec"
 set :rbenv_map_bins, %w[rake gem bundle ruby rails puma]
 set :rbenv_roles, :all
 
-
+set :rbenv_map_bins, %w[
+  ruby
+  gem
+  bundle
+  rake
+  rails
+  puma
+]
 
 
 # Default branch is :master
