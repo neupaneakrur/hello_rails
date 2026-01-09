@@ -55,6 +55,7 @@ group :development do
   gem "capistrano-rails", "~> 1.7"
   gem "capistrano-bundler", "~> 2.2"
   gem "capistrano-sidekiq", "~> 3.2"
+  gem 'capistrano-rbenv'
 end
 
 group :test do
