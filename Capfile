@@ -1,12 +1,11 @@
-require "capistrano/setup"
-require "capistrano/deploy"
+# Capfile
 
-require "capistrano/rails"
-require "capistrano/bundler"
+require 'capistrano/setup'
+require 'capistrano/deploy'
 
-require "capistrano/scm/git"
-install_plugin Capistrano::SCM::Git
-
+# IMPORTANT: load rbenv EARLY
 require 'capistrano/rbenv'
+require 'capistrano/bundler'
 
-Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
+# Load custom tasks
+Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
