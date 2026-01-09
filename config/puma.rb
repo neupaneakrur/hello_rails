@@ -1,4 +1,4 @@
-app_dir = "/var/www/hello_rails/current"
+app_dir = "/home/ubuntu/hello_rails/current"
 
 directory app_dir
 environment "production"

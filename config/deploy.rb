@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:neupaneakrur/hello_rails.git"
 set :branch, "main"
 
 
-set :deploy_to, "/var/www/hello_rails"
+set :deploy_to, "/home/ubuntu/hello_rails"
 
 set :format, :airbrussh
 set :log_level, :info
