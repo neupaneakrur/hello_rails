@@ -5,7 +5,7 @@ ruby "3.2.2"
 # ----------------------------
 # Rails core
 # ----------------------------
-gem "rails", "~> 8.1.1"
+gem "rails", "~> 8.1.2"
 gem "propshaft"
 gem "sqlite3", ">= 2.1"
 gem "puma", ">= 5.0"
